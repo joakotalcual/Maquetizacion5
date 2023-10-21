@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-size: 16px;
+    font-family: helvetica;
+    line-height: 24px;
+    width: 1200px;
+    margin: auto;
+}
+span{
+    font-weight: bold;
+    color: #631233;
+}
+.conTitular{
+    padding: 10px 0px;
+    background-color: lightgray;
+    text-align: center;
+}
+h1{
+    padding: 15px 0px;
+    width: 1000px;
+    margin: auto;
+}
+.colorenHR{
+    margin: auto;
+    width: 1000px;
+    border-top: 3px lightgray solid;
+}
+.colorenHR hr{
+    background-color: #631233;
+    height: 12px;
+    width: 60px;
+}
+.conParaFormulario{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.primeraDivision{
+    line-height: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+.segundaDivision{
+    margin-top: 50px;
+    line-height: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+p{
+    width: 1015px;
+    margin: auto;
+}
+.segundaDivision a{
+    height: 35px;
+    display: inline-block;
+    background-color: #631233;
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px;
+}
+.segundaDivision img{
+    /* padding-top: 5px; */
+    width: 20px;
+    height: 20px;
+}
+.terceraDivision{
+    margin-top: 100px;
+    line-height: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+form input{
+    margin-right: 25px;
+    width: 250px;
+    height: 35px;
+}
+form label{
+    font-weight: bold;
+}
+button{
+    border-radius: 2px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #13322C;
+}
+form input[type="date"]{
+    color: #999;
+}
+select{
+    color: #999;
+    width: 250px;
+    height: 35px;
+}
+textarea{
+    width: 1000px;
+    height: 300px;
+}
+.conFinal{
+    background-color: #631233;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0px;
+}

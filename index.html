@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetización Jesus Esparza</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="conTitular">
+        <img src="imagenes/logo.png" alt>
+    </header>
+    <h1>Datos generales del alumno</h1>
+    <div class="colorenHR"><hr></div>
+    <br>
+    <p><span>* Campos obligatorios</span></p>
+    <br>
+    <div class="conParaFormulario">
+        <form action="GUARDADOEXITOSO.py" name="formularioAlumno" method="get">
+            <div class="primeraDivision">
+                <label for="">CURP:</label>
+                <br>
+                <input type="text" placeholder="CURP">
+                <br>
+                <label for="">Nombre<span>*</span>:</label>
+                <br>
+                <input type="text" placeholder="Nombres" id="nombre">
+                <br>
+                <label for="">Correo electronico<span>*</span>:</label>
+                <br>
+                <input type="text" placeholder="Correo" id="correo">
+                <br>
+                <label for="">Telefono fijo:</label>
+                <br>
+                <input type="text" placeholder="Telefono fijo">
+            </div>
+            <div class="segundaDivision">
+                <a href="https://seguriudad-enlineamxn.com/www-gob-mx-curp-complemento-seguridadmx-enlinea/" target="_blank">Consultar CURP <img src="imagenes/lupa.png" alt></a>
+                <br>
+                <label for="">Primer apellido<span>*</span>:</label>
+                <br>
+                <input type="text" placeholder="Primer apellido" id="apellido">
+                <br>
+                <label for="">Sexo:</label>
+                <br>
+                <select name="seleccionar" id="">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="text">Masculino</option>
+                    <option value="text">Femenino</option>
+                </select>
+                <br>
+                <label for="">Celular:</label>
+                <br>
+                <input type="tel" placeholder="Celular">
+            </div>
+            <div class="terceraDivision">
+                <label for="">Segundo apellido:</label>
+                <br>
+                <input type="text" placeholder="Segundo apellido">
+                <br>
+                <label for="">Fecha de nacimiento</label>
+                <br>
+                <input type="date">
+            </div>
+            <br><br>
+            <div class="asuntoFinal">
+                <label for="">Asunto<span>*</span>:</label>
+                <br>
+                <textarea name="areaTexto" id="asunto"></textarea>
+                <br><br>
+                <button type="button" id="btnEnviar">Enviar</button>
+            </div>
+            <br><br><br>
+        </form>
+    </div>
+    <div class="conFinal">
+        <p>JESÚS JOAQUÍN ESPARZA QUIJANO</p><br>
+        <p>7SB</p><br>
+        <p>PROGRAMACIÓN WEB</p>
+    </div>
+    <script type="text/javascript">
+        $("#btnEnviar").click(
+            function (){
+        if ($("#nombre").val().trim()=='') {
+                alert("Escriba su nombre");
+                $("#nombre").focus();
+                return false;
+            }
+        if ($("#correo").val().trim()=='') {
+                alert("El correo electrónico no es válido");
+                $("#correo").focus();
+                return false;
+            }
+        if ($("#apellido").val().trim()==''){
+                alert("Escriba su primer apellido");
+                $("#apellido").focus();
+                return false;
+            }
+        if ($("#asunto").val().trim()==''){
+            alert("Escriba el asunto");
+            $("#asunto").focus();
+            return false;
+            }
+        document.formularioAlumno.submit();
+        });
+    </script>
+</body>
+</html>
